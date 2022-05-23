@@ -1,5 +1,6 @@
 {
   "name": "tech-event-app",
+  "author": "Osuohia Emmanuel",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
