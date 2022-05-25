@@ -31,8 +31,6 @@ function CategoriesPage() {
         )
         const querySnap = await getDocs(q)
 
-        console.log(querySnap)
-
         const listings = []
 
         querySnap.forEach((doc) => {

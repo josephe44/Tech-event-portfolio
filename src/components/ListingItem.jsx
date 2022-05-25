@@ -7,7 +7,7 @@ function ListingItem({ id, listing }) {
         <div className="card bg-neutral text-neutral-content mt-4 text-center md:w-1/2 sm:w-full">
           <h1 className="text-xl font-semibold p-2 mb-1">
             <span>
-              <i class="fa-solid fa-circle text-xs mr-2"></i>
+              <i className="fa-solid fa-circle text-xs mr-2"></i>
             </span>{' '}
             {listing.name}
           </h1>
