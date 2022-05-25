@@ -2,6 +2,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import ExplorePage from './pages/ExplorePage'
 import HomePage from './pages/HomePage'
 import Footer from './components/Footer'
+import CategoriesPage from './pages/CategoriesPage'
+import Listing from './pages/Listing'
 
 function App() {
   return (
@@ -11,6 +13,14 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/explore" element={<ExplorePage />} />
+            <Route
+              path="/category/:categoryName"
+              element={<CategoriesPage />}
+            />
+            <Route
+              path="/category/:categoryName/:listingId"
+              element={<Listing />}
+            />
           </Routes>
         </main>
         <Footer />
