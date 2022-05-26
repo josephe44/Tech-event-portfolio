@@ -6,7 +6,6 @@ import Spinner from '../components/Spinner'
 import { ImageGroup, Image } from 'react-fullscreen-image'
 import '../App.css'
 
-
 function Listing() {
   const [listing, setListing] = useState(null)
   const [loading, setLoading] = useState(true)
@@ -28,21 +27,23 @@ function Listing() {
     fetchListing()
   }, [navigate, params.listingId])
 
-  if (loading) {
-    return <Spinner />
-  }
-
   return (
-    <div className="container">
-      <ImageGroup>
-        <ul className="images">
-          {listing.imageUrls.map((index) => (
-            <li key={index}>
-              <Image src={index} alt="listing" />
-            </li>
-          ))}
-        </ul>
-      </ImageGroup>
+    <div>
+      {loading ? (
+        <Spinner />
+      ) : (
+        <div className="container">
+          <ImageGroup>
+            <ul className="images">
+              {listing.imageUrls.map((index) => (
+                <li key={index}>
+                  <Image src={index} alt="listing" />
+                </li>
+              ))}
+            </ul>
+          </ImageGroup>
+        </div>
+      )}
     </div>
   )
 }
