@@ -1,17 +1,17 @@
-import profileImage from '../assets/images/twitterpic.jpg'
-
 function AboutPage() {
   return (
     <div className="grid grid-cols-1 place-items-center mt-4">
       <div className="w-24 h-24 mx-auto">
         <img
           className="w-full rounded-full"
-          src={profileImage}
+          src="https://res.cloudinary.com/eworldtech/image/upload/c_scale,w_1024/v1653593839/oscafest%202022%20pictures/IMG_20220326_090350_2_uavsuf.jpg"
           alt="about-img"
         />
       </div>
-      <div className="mt-8 md:text-center sm:text-left lg:w-3/5">
-        <h1 className="text-2xl font-bold mb-2">About Me</h1>
+      <div className="mt-6 md:text-center sm:text-left lg:w-3/5">
+        <h1 className="text-2xl font-bold mb-2">
+          <i class="fa-solid fa-circle-user"></i> About Me
+        </h1>
         <p>
           Osuohia Emmanuel is a Software Engineering Student, a lover of
           JavaScript, who has invested hours in learning about it and how it
@@ -23,7 +23,7 @@ function AboutPage() {
         <p className="mt-1">
           Osuohia Emmanuel is a graduate of Electrical and Electronics
           engineering. Currently He is studying Software Engineering at
-          Altschool Africa. You can find him on his social media accounts
+          Altschool Africa. You can find him on his social media accounts:
         </p>
       </div>
       <div className="mt-4">

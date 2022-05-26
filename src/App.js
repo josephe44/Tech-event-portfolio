@@ -13,7 +13,7 @@ function App() {
     <Router>
       <div className="flex flex-col justify-between h-full">
         <Navbar />
-        <main className="container mx-auto px-3 pb-12">
+        <main className="container mx-auto px-3 pt-4 pb-12">
           <Routes>
             <Route path="/about" element={<AboutPage />} />
             <Route path="/" element={<HomePage />} />
