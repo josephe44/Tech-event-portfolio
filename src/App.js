@@ -1,14 +1,17 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import ExplorePage from './pages/ExplorePage'
 import HomePage from './pages/HomePage'
-import Footer from './components/Footer'
 import CategoriesPage from './pages/CategoriesPage'
 import Listing from './pages/Listing'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+
 
 function App() {
   return (
     <Router>
-      <div className="flex flex-col justify-between h-screen">
+      <div className="flex flex-col justify-between h-full">
+        <Navbar />
         <main className="container mx-auto px-3 pb-12">
           <Routes>
             <Route path="/" element={<HomePage />} />
