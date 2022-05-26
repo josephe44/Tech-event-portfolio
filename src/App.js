@@ -3,6 +3,7 @@ import ExplorePage from './pages/ExplorePage'
 import HomePage from './pages/HomePage'
 import CategoriesPage from './pages/CategoriesPage'
 import Listing from './pages/Listing'
+import AboutPage from './pages/AboutPage'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 
@@ -14,6 +15,7 @@ function App() {
         <Navbar />
         <main className="container mx-auto px-3 pb-12">
           <Routes>
+            <Route path="/about" element={<AboutPage />} />
             <Route path="/" element={<HomePage />} />
             <Route path="/explore" element={<ExplorePage />} />
             <Route
