@@ -1,12 +1,16 @@
+import { motion } from 'framer-motion'
+
 function AboutPage() {
   return (
     <div className="grid grid-cols-1 place-items-center mt-4">
       <div className="w-24 h-24 mx-auto">
-        <img
-          className="w-full rounded-full"
-          src="https://res.cloudinary.com/eworldtech/image/upload/c_scale,w_1024/v1653593839/oscafest%202022%20pictures/IMG_20220326_090350_2_uavsuf.jpg"
-          alt="about-img"
-        />
+        <motion.div whileHover={{ scale: 1.3 }} whileTap={{ scale: 0.9 }}>
+          <img
+            className="w-full rounded-full"
+            src="https://res.cloudinary.com/eworldtech/image/upload/c_scale,w_1024/v1653593839/oscafest%202022%20pictures/IMG_20220326_090350_2_uavsuf.jpg"
+            alt="about-img"
+          />
+        </motion.div>
       </div>
       <div className="mt-6 md:text-center sm:text-left lg:w-3/5">
         <h1 className="text-2xl font-bold mb-2">
